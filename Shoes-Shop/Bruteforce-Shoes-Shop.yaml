@@ -62,7 +62,7 @@ requests:
       - type: status
         status:
           - 200
-    extractors:
+    exposer:
       - type: regex
         part: all
         regex:
