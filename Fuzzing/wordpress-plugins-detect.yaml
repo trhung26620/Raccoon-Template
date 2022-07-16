@@ -12,10 +12,10 @@ requests:
         Host: {{Hostname}}
 
     payloads:
-      pluginSlug: C:\Users\Admin\Desktop\Injection-Tool\config\wp-plugins.txt
+      pluginSlug: ../Wordlists/wp-plugins.txt
     scanMode: batteringram
     threads: 50
-    matchers-condition: and
+    multipleMatcher: and
     matchers:
       - type: status
         status:
