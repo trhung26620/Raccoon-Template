@@ -1,0 +1,31 @@
+info:
+  id: wp-db-repair
+  name: Wordpress DB Repair Exposed
+  author: Hung, Dat, Danh, Hoa
+  severity: low
+  description: Discover enabled Wordpress repair page.
+  tags: wordpress,config
+
+requests:
+  - request:
+      - |
+        GET /wp-admin/maint/repair.php HTTP/1.1
+        Host: {{Hostname}}
+
+    multipleMatcher: and
+    matchers:
+      - type: word
+        word:
+          - "<title>WordPress"
+
+      - type: status
+        status:
+          - 200
+
+      - type: word
+        word:
+          - "define"
+          - "WP_ALLOW_REPAIR"
+          - "true"
+        condition: and
+        exclusion: true

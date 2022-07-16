@@ -1,5 +1,5 @@
 info:
-  id: wordpress-plugins-detect
+  id: wp-plugins-detect
   name: WordPress Plugins Detection
   author: Hung, Dat, Hoa, Danh
   severity: info
@@ -14,7 +14,7 @@ requests:
     payloads:
       pluginSlug: ../Wordlists/wp-plugins.txt
     scanMode: batteringram
-    threads: 50
+    thread: 50
     multipleMatcher: and
     matchers:
       - type: status

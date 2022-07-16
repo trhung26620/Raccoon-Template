@@ -1,5 +1,5 @@
 info:
-  id: wordpress-themes-detect
+  id: wp-themes-detect
   name: WordPress Theme Detection
   author: Hung, Dat, Danh, Hoa
   severity: info
@@ -14,7 +14,7 @@ requests:
     payloads:
       themeSlug: ../Wordlists/wp-themes.txt
     scanMode: batteringram
-    threads: 50
+    thread: 50
     multipleMatcher: and
     matchers:
       - type: status
