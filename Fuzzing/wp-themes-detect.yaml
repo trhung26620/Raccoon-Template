@@ -8,11 +8,11 @@ info:
 requests:
   - request:
       - |
-        GET /wp-content/themes/{{themeSlug}}/readme.txt HTTP/1.1
+        GET /wp-content/themes/{{wp_theme}}/readme.txt HTTP/1.1
         Host: {{Hostname}}
 
     payloads:
-      themeSlug: ../Wordlists/wp-themes.txt
+      wp_theme: Raccoon-Template/Wordlists/wp-themes.txt
     scanMode: batteringram
     thread: 50
     multipleMatcher: and
