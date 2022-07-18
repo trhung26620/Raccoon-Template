@@ -3,6 +3,10 @@ info:
   name: WordPress Theme Detection
   author: Hung, Dat, Danh, Hoa
   severity: info
+  description: Detect themes that WordPress is using.
+  remediation: Update installed plugins to latest.
+  reference:
+    - https://wpscan.com/themes
   tags: fuzz,wordpress
 
 requests:

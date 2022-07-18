@@ -6,7 +6,10 @@ info:
   severity: high
   description: Detect SQL Injection in Shoes Shop
   remediation: Using prepared statements, whitelist input validation, escaping all user supplied input, constructed stored procedures.
-
+  reference:
+    - https://owasp.org/www-community/attacks/Blind_SQL_Injection
+  tags: sqli,time-based,shoes-shop
+  
 requests:
   - request:
       - |

@@ -3,6 +3,10 @@ info:
   name: WordPress Plugins Detection
   author: Hung, Dat, Hoa, Danh
   severity: info
+  description: Detect plugins that WordPress is using.
+  remediation: Update installed themes to latest.
+  reference:
+    - https://wpscan.com/plugins
   tags: fuzz,wordpress
 
 requests:

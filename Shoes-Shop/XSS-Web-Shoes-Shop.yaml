@@ -8,6 +8,10 @@ info:
   severity: medium
   description: Detect XSS in Shoes Shop
   remediation: Use whitelist input validation, escape unvalidated input such as < to &lt, > to &gt, " to &quot. Use htmlentities for HTML context or Javascript unicode for Javascript context.
+  reference:
+    - https://portswigger.net/web-security/cross-site-scripting
+  tags: xss,shoes-shop
+  
 requests:
   - request:
       - |

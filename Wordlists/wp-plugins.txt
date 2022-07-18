@@ -768,7 +768,6 @@ ad-filter-injector
 ad-free-google-safe-search-for-schools
 ad-injection
 ad-ink
-ad-inserter
 ad-invalid-click-protector
 ad-itt
 ad-kangaroo-for-adsense
@@ -814,7 +813,6 @@ adapter-post-preview
 adapter-responsive-video
 adapter-widget-rows
 adapti-link
-adaptive-images
 adaptive-learning-with-learndash
 adatosystems-friday-zmanim
 adauthx

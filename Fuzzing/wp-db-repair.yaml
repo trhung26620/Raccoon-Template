@@ -4,7 +4,9 @@ info:
   author: Hung, Dat, Danh, Hoa
   severity: low
   description: Discover enabled Wordpress repair page.
-  remediation: Hide or forbidden people access to this page.
+  remediation: Disable or forbidden people access to this page.
+  reference:
+    - https://monovm.com/blog/how-to-repair-wordpress-database/
   tags: wordpress,config
 
 requests:
