@@ -1,0 +1,20 @@
+info:
+  id: wp-debug-log
+  name: WordPress debug log
+  author: Hung, Dat, Danh, Hoa
+  severity: low
+  remediation: Hide or forbidden people access to this log.
+  tags: wordpress
+
+requests:
+  - request:
+      - |
+        GET /wp-content/debug.log HTTP/1.1
+        Host: {{Hostname}}
+
+    matchers:
+      - type: word
+        word:
+          - "line"
+          - "PHP"
+        part: body
