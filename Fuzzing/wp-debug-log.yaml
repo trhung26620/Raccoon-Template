@@ -12,9 +12,12 @@ requests:
         GET /wp-content/debug.log HTTP/1.1
         Host: {{Hostname}}
 
+    multipleMatcher: and
     matchers:
       - type: word
         word:
           - "line"
           - "PHP"
-        part: body
+      - type: status
+        status:
+          - 200
