@@ -1,4 +1,3 @@
-
 # XSS: "<script>alert(document.domain)</script>"
 info:
   id: XSS-Web-Shoes-Shop
