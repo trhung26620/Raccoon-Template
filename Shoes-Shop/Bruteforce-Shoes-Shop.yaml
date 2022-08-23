@@ -63,8 +63,3 @@ requests:
       - type: status
         status:
           - 200
-    exposer:
-      - type: regex
-        part: all
-        regex:
-          - section[a-zA-Z ]+
